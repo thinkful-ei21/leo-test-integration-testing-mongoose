@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: c+oLlPMXE8wl1VrAsMrFjYq5jri0uDDq8wSssSISBwvOAAAKZqR89R2Ye14GGe/TYqS4eIhIs2bfYsavR/jtzTkL9WtmQAaBKU7zQ4Op599hCMwtTL8slHq1s1Q0d9dAJ3FlvwTpcpTs3ipq5OTOEq1Hw8lZvy9OHfcsfx0bQ7S4LRvufspsrSuBLUDHdjLF1hWleIRzsHckKAj4ff5iOcVyYiVyvVuUTTqPILZGxGsTdJhsVWCBS13eFtAigGC0pbThdxKDguZ4w9W6hjyNb7YwYlpfJQnALTu7UJmfWqLr1On0ysm987P2w5HN63bbb/FtNWBPoMaz+sHYomfYcoF8F0LSfpQEZGqhaQb6Q2ZkNWOVuOs4p8q7BHlZDPbhgTpkVehIPPKyd1BEaXgbgJLiMxHuitf8l/q6pZqAWTHt4eoPwHJz69MIgTBzDhHTLkK9pFmTH2eklPY0HHBTF2ALpSxT/bIR/Rwi9iywdZnS1EqFoJ67ChqWy8NdHZaCSowWvP3dHg0FHhcGMpgtQr07xD1epu/s6n6A8Yf0du6yFzNlnsncgZSDvpVnJDzabXht07/NOz8pz36ziSpEq9Q4LVXqLzdaXg0p6rSXdCCNI7K3ReOHhpgG1TnOt9YErk3qQ6sRdOLlwYUilDbPGzW3fHsiTnTOv7F7JZasHO0=
+  app: sleepy-brook-91957
+  on:
+    repo: thinkful-ei21/leo-test-integration-testing-mongoose
+    branch: feature/with-tests
