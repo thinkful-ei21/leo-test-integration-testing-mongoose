@@ -13,7 +13,7 @@ const {Restaurant} = require('../models');
 const {app, runServer, closeServer} = require('../server');
 const {TEST_DATABASE_URL} = require('../config');
 
-chai.use(chaiHttp);
+chai.use (chaiHttp);
 
 // used to put randomish documents in db
 // so we have data to work with and assert about.
